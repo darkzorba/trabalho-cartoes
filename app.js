@@ -5,7 +5,7 @@ function criaCartao(categoria, pergunta, resposta) {
 
     cartao.innerHTML = `
     <div class="cartao__conteudo">
-        <h3>${categoria}</h3>
+        <h3 class="categoria">${categoria}</h3>
         <div class="cartao__conteudo__pergunta">
             <p>${pergunta}</p>
         </div>
@@ -14,7 +14,8 @@ function criaCartao(categoria, pergunta, resposta) {
         </div>
     </div>
     <button class="remover-cartao">✖</button>
-    `;
+`;
+
 
     let respostaEstaVisivel = false;
 
